@@ -1,0 +1,266 @@
+site_name: 某兰的笔记本
+site_url: https://note.enl-z.cc
+edit_uri: tree/master/docs
+copyright: Copyright &copy; 2022-2023 <a href="https://github.com/enl-z" target="_blank" rel="noopener">某兰</a>
+site_author: Enl_Z
+site_description: 某兰的笔记
+
+# Pages
+nav: 
+  - Hello: 
+    - Hello: index.md
+    - 友链: link.md
+  - Course:
+    - 前言: Course/abstract.md
+    - 计算机系统Ⅱ:
+      - 计算机系统Ⅱ: Course/System2/index.md
+    - 计算机系统Ⅲ:
+      - 计算机系统Ⅲ: Course/System3/index.md
+    - 数据结构基础: 
+      - 数据结构基础: Course/FDS/index.md
+      - 算法分析和抽象数据类型: Course/FDS/Lec01.md
+      - 线性结构: Course/FDS/Lec02.md
+      - 树: Course/FDS/Lec03.md
+      - 图: Course/FDS/Lec04.md
+      - 排序: Course/FDS/Lec05.md
+      - 哈希: Course/FDS/Lec06.md
+    - 高级数据结构与算法分析:
+      - 高级数据结构与算法分析: Course/ADS/index.md
+      - AVL & Splay: Course/ADS/Lec01.md
+      - Red-Black & B+: Course/ADS/Lec02.md
+      - Heap: Course/ADS/Lec03.md
+      - Backtracking: Course/ADS/Lec04.md
+      - Divide and Conquer: Course/ADS/Lec05.md
+      - Dynamic Programming: Course/ADS/Lec06.md
+      - Greedy: Course/ADS/Lec07.md
+      - NP - Completeness: Course/ADS/Lec08.md
+    - 面向对象程序设计:
+      - 面向对象程序设计: Course/OOP/index.md
+      - Beginning: Course/OOP/Lec01.md
+      - Step in Object-Oriented: Course/OOP/Lec02.md
+      - Container: Course/OOP/Lec03.md
+      - Object Interactive: Course/OOP/Lec04.md
+      - Key Words: Course/OOP/Lec05.md
+      - Inheritance & Polymorphism: Course/OOP/Lec06.md
+      - Copt Ctor & Overloaded Operators: Course/OOP/Lec07.md
+      - Templates: Course/OOP/Lec08.md
+      - Exception Handling: Course/OOP/Lec09.md
+      - Smart Pointers: Course/OOP/Lec10.md
+      - Class Design: Course/OOP/Lec11.md
+      - Streams & 继承构造函数: Course/OOP/Lec12.md
+    - 密码学:
+      - 密码学: Course/Crypto/index.md
+      - 数学基础: Course/Crypto/Lec01.md
+      - 古典密码: Course/Crypto/Lec02.md
+  #- Self-Learning:
+  #    - CS61A:  
+  - Triviality: 
+    - Markdown:
+      - Perface: Triviality/Markdown/index.md
+      - Markdown: Triviality/Markdown/markdown.md
+    - Missing Semester: 
+      - Missing Semester: Triviality/The Missing Semester/index.md
+      - Vim: Triviality/The Missing Semester/Vim.md
+    - CMake: 
+      - CMake: Triviality/CMake/index.md
+      - 准备&试编译: Triviality/CMake/Lec01.md
+      - 初体验: Triviality/CMake/Lec02.md
+  - Tools: 
+    - GitHub: 
+      - GitHub: Triviality/GitHub/index.md
+      - Basics: Triviality/GitHub/Le1.md
+      #- Git 入门: Triviality/GitHub/Le3.md
+
+theme:
+  name: material
+  logo: Icon/Avatar.png
+  custom_dir: overrides
+  icon: 
+    logo: material/airplane # 页面icon
+  font: 
+    text: JetBrains Mono
+    code: JetBrains Mono
+  favicon: Icon/Avatar.png
+  admonition:
+    note: octicons/tag-16
+    abstract: octicons/checklist-16
+    info: octicons/info-16
+    tip: octicons/squirrel-16
+    success: octicons/check-16
+    question: octicons/question-16
+    warning: octicons/alert-16
+    failure: octicons/x-circle-16
+    danger: octicons/zap-16
+    bug: octicons/bug-16
+    example: octicons/beaker-16
+    quote: octicons/quote-16
+  palette:
+    - scheme: default
+      primary: DustyPeony 
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to Dark_Pink mode
+    - scheme: slate  #Kleinland
+      primary: Kleinland #slate
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to Light_Pink mode
+    - scheme: default 
+      primary: Kleinland 
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to Dark_Blue mode
+    - scheme: slate 
+      primary: DustyPeony 
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to Light_Blue mode
+  # 导航栏
+  features:
+    - navigation.tracking # 在url中使用标题定位锚点
+    - navigation.tabs # nav top目录显示在标题栏
+    - navigation.tabs # 顶部显示导航顶层nav（也就是第一个节点）
+    - navigation.tabs.sticky  # 滚动是隐藏顶部nav，需要配合navigation.tabs使用
+    #- navigation.sections  # nav节点缩进
+    #- navigation.expand  # 每次刷新都展开子节点
+    - navigation.indexes  # 跟navigation.instant不兼容
+    #- toc.integrate  # 目录展开在字节点下
+    - navigation.top # 一键回顶 top
+    - search.suggest
+    - search.highlight
+    #- header.autohide
+    - content.code.annotate
+    - header.autohide
+    - toc.separate
+    - toc.follow
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    - content.tooltips
+    - navigation.footer
+    - search.highlight
+    - search.share
+    - search.suggest
+
+  language: zh # 一些提示性的文字会变成中文
+
+repo_url: https://github.com/enl-z/Notebook # 右上角点击跳转的链接
+repo_name: note.enl-z.cc # 右上角的名字
+## [bottom-left corner]
+
+# [Extensions]
+plugins:
+  - search:
+      separator: '[\s\u200b\-]'
+  - encryptcontent:
+      title_prefix: '[LOCK]'
+      summary: AES encryption supported by unverbuggt@github's plugin
+      placeholder: Provide password and press ENTER
+      decryption_failure_message: Invalid password
+      encryption_info_message: Contact me(Enl_Z) via methods provided in the comments section for access to this page
+  - mermaid2
+  #- tags # 给单篇文章添加标签 https://squidfunk.github.io/mkdocs-material/setup/setting-up-tags/?h=tags
+  # - git-revision-date-localized: # 显示最后一次修改时间
+  #     type: timeago
+  #     enable_creation_date: true
+
+markdown_extensions:
+  - toc:  #锚点
+      permalink: true
+      toc_depth: 5
+  #独立术语表
+  - abbr
+  - pymdownx.snippets
+  #提示、警告栏
+  - admonition
+  - pymdownx.details  # 提示块可折叠
+  - pymdownx.superfences:   # 代码嵌套在列表里
+      custom_fences:
+          - name: mermaid
+            class: mermaid
+            format: !!python/name:mermaid2.fence_mermaid_custom
+  #按钮
+  - attr_list
+  #代码块
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite  # 行内代码高亮
+  #内容标签栏
+  - pymdownx.tabbed:
+      alternate_style: true 
+  #表格
+  - tables
+  #注脚
+  - footnotes
+  #格式化处理
+  - pymdownx.keys
+  - pymdownx.mark   # 文本高亮
+  - pymdownx.tilde  # 删除线下标
+  - pymdownx.caret  # 下划线上标
+  - pymdownx.critic # 增加删除修改高亮注释，可修饰行内或段落
+  #图标
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  #图片
+  - md_in_html
+  #列表
+  - def_list
+  - pymdownx.tasklist:  # 复选框checklist
+      custom_checkbox: true
+  #其他
+  - smarty
+  - meta
+  - sane_lists
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:  # 对加粗和斜体更好的检测
+      smart_enable: all
+  - pymdownx.smartsymbols # 符号转换
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: Enl_Z
+      repo: note.enl-z.cc
+  - toc:
+      permalink:  👀 # ⚓︎ # 显示锚点
+  - pymdownx.tasklist:
+      custom_checkbox: true  
+  - nl2br
+  
+extra_javascript:
+  - 'overrides/assets/javascripts/extra.js'
+  #- mkdocs/javascripts/mathjax.js
+  - https://gcore.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js
+  - mkdocs/javascripts/katex.js
+  - https://unpkg.com/mermaid@8.7.0/dist/mermaid.min.js
+  #- https://polyfill.io/v3/polyfill.min.js?features=es6
+  #- https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+extra_css:
+  - https://gcore.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css
+  - mkdocs/extra_css/tasklist.css
+  - mkdocs/extra_css/counter.css
+  - mkdocs/extra_css/giscus.css
+  - mkdocs/extra_css/flink.css
+  - mkdocs/extra_css/extra.css
+
+extra: 
+  vssue: Enl_Z
+  analytics:
+    provider: google
+    property: !ENV GOOGLE_ANALYTICS_KEY
+  social: 
+    - icon: fontawesome/brands/github
+      link: https://github.com/enl-z
+      name: GitHub 
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:EZhao1997@outlook.com
+      name: Outlook 
+    - icon: fontawesome/brands/qq
+      link: tencent://AddContact/?fromId=45&fromSubId=1&subcmd=all&uin=1613715141&website=www.oicqzone.com
+      name: QQ 
+    - icon: fontawesome/regular/chess-king
+      link: https://enl-z.cc/
+      name: Blog
+
