@@ -1,30 +1,33 @@
-site_name: 某兰的笔记本
-site_url: https://note.enl-z.cc
-edit_uri: tree/master/docs
-copyright: Copyright &copy; 2022-2023 <a href="https://github.com/enl-z" target="_blank" rel="noopener">某兰</a>
-site_author: Enl_Z
-site_description: 某兰的笔记
+site_name: Wuei 的笔记本
+site_url: https://wuei-L.github.io
+# edit_uri: tree/master/docs
+copyright: Copyright &copy; 2023 <a href="https://github.com/wuei-L" target="_blank" rel="noopener">笨蛋</a>
+site_author: wuei-L
+site_description: Wuei 的笔记
 
 # Pages
+# 最多两级，
+# -
+#   -
 nav: 
   - Hello: 
     - Hello: index.md
     - 友链: link.md
   - Course:
-    - 简介: index.md
-    
+    - 简介: Course/index.md
+
 
       
 theme:
   name: material
-  logo: Icon/Avatar.png
+  logo: Icon/Avatar.jpg #头像
   custom_dir: overrides
   icon: 
     logo: material/airplane # 页面icon
   font: 
     text: JetBrains Mono
     code: JetBrains Mono
-  favicon: Icon/Avatar.png
+  favicon: Icon/Avatar.jpg
   admonition:
     note: octicons/tag-16
     abstract: octicons/checklist-16
@@ -89,8 +92,8 @@ theme:
 
   language: zh # 一些提示性的文字会变成中文
 
-repo_url: https://github.com/enl-z/Notebook # 右上角点击跳转的链接
-repo_name: note.enl-z.cc # 右上角的名字
+repo_url: https://github.com/wuei-L/wuei-L.github.io # 右上角点击跳转的链接
+repo_name: wuei-L.github.io # 右上角的名字
 ## [bottom-left corner]
 
 # [Extensions]
@@ -99,10 +102,10 @@ plugins:
       separator: '[\s\u200b\-]'
   - encryptcontent:
       title_prefix: '[LOCK]'
-      summary: AES encryption supported by unverbuggt@github's plugin
+      summary: 不让看
       placeholder: Provide password and press ENTER
       decryption_failure_message: Invalid password
-      encryption_info_message: Contact me(Enl_Z) via methods provided in the comments section for access to this page
+      encryption_info_message: Contact me
   - mermaid2
   #- tags # 给单篇文章添加标签 https://squidfunk.github.io/mkdocs-material/setup/setting-up-tags/?h=tags
   # - git-revision-date-localized: # 显示最后一次修改时间
@@ -164,7 +167,7 @@ markdown_extensions:
   - pymdownx.smartsymbols # 符号转换
   - pymdownx.magiclink:
       repo_url_shorthand: true
-      user: Enl_Z
+      user: wuei-L
       repo: note.enl-z.cc
   - toc:
       permalink:  👀 # ⚓︎ # 显示锚点
@@ -190,21 +193,21 @@ extra_css:
   - mkdocs/extra_css/extra.css
 
 extra: 
-  vssue: Enl_Z
+  #vssue: wuei-L
   analytics:
     provider: google
     property: !ENV GOOGLE_ANALYTICS_KEY
   social: 
     - icon: fontawesome/brands/github
-      link: https://github.com/enl-z
+      link: https://github.com/wuei-L
       name: GitHub 
-    - icon: fontawesome/solid/paper-plane
-      link: mailto:EZhao1997@outlook.com
-      name: Outlook 
+    #- icon: fontawesome/solid/paper-plane
+    #  link: mailto:EZhao1997@outlook.com
+    #  name: Outlook 
     - icon: fontawesome/brands/qq
-      link: tencent://AddContact/?fromId=45&fromSubId=1&subcmd=all&uin=1613715141&website=www.oicqzone.com
+      link: tencent://AddContact/?fromId=45&fromSubId=1&subcmd=all&uin=1264459560&website=www.oicqzone.com
       name: QQ 
-    - icon: fontawesome/regular/chess-king
-      link: https://enl-z.cc/
-      name: Blog
+    #- icon: fontawesome/regular/chess-king
+    #  link: https://enl-z.cc/
+    #  name: Blog
 
