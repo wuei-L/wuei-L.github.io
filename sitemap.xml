@@ -16,7 +16,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://wuei-L.github.io/Course/Banwu/</loc>
+         <loc>https://wuei-L.github.io/Course/%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/</loc>
+         <lastmod>2023-09-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://wuei-L.github.io/Course/%E6%8E%A7%E5%88%B6%E7%90%86%E8%AE%BA%EF%BC%88%E4%B9%99%EF%BC%89/</loc>
          <lastmod>2023-09-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
