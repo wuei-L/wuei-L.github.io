@@ -1,7 +1,7 @@
 site_name: Wuei 的笔记本
 site_url: https://wuei-L.github.io
 # edit_uri: tree/master/docs
-copyright: Copyright &copy; 2023 <a href="https://github.com/wuei-L" target="_blank" rel="noopener">笨蛋</a>
+copyright: Copyright &copy; 2023 <a href="https://github.com/wuei-L" target="_blank" rel="noopener">wuei</a>
 site_author: wuei-L
 site_description: Wuei 的笔记
 
@@ -15,7 +15,12 @@ nav:
     - 友链: link.md
   - Course:
     - 简介: Course/index.md
-
+    - 半导体物理:
+      - 大纲: Course/半导体物理/大纲.md
+    - 控制理论（乙）:
+      - 控制理论（乙）: Course/控制理论（乙）/index.md
+  - 杂项: 
+    - mkdocs: Triviality/mkdocs/index.md
 
       
 theme:
@@ -45,23 +50,23 @@ theme:
     - scheme: default
       primary: DustyPeony 
       toggle:
-        icon: material/toggle-switch
+        icon: material/weather-sunny #material/toggle-switch
         name: Switch to Dark_Pink mode
     - scheme: slate  #Kleinland
-      primary: Kleinland #slate
+      primary: DustyPeony #Kleinland #slate
       toggle:
-        icon: material/toggle-switch-off-outline
+        icon: material/weather-night #material/toggle-switch-off-outline
         name: Switch to Light_Pink mode
-    - scheme: default 
-      primary: Kleinland 
-      toggle:
-        icon: material/toggle-switch
-        name: Switch to Dark_Blue mode
-    - scheme: slate 
-      primary: DustyPeony 
-      toggle:
-        icon: material/toggle-switch-off-outline
-        name: Switch to Light_Blue mode
+    #- scheme: default 
+    #  primary: Kleinland 
+    #  toggle:
+    #    icon: material/toggle-switch
+    #    name: Switch to Dark_Blue mode
+    #- scheme: slate 
+    #  primary: DustyPeony 
+    #  toggle:
+    #    icon: material/toggle-switch-off-outline
+    #    name: Switch to Light_Blue mode
   # 导航栏
   features:
     - navigation.tracking # 在url中使用标题定位锚点
@@ -80,8 +85,8 @@ theme:
     - header.autohide
     - toc.separate
     - toc.follow
-    - content.action.edit
-    - content.action.view
+    # - content.action.edit
+    # - content.action.view
     - content.code.annotate
     - content.code.copy
     - content.tooltips
@@ -107,6 +112,7 @@ plugins:
       decryption_failure_message: Invalid password
       encryption_info_message: Contact me
   - mermaid2
+  - obsidian-support
   #- tags # 给单篇文章添加标签 https://squidfunk.github.io/mkdocs-material/setup/setting-up-tags/?h=tags
   # - git-revision-date-localized: # 显示最后一次修改时间
   #     type: timeago
@@ -168,7 +174,7 @@ markdown_extensions:
   - pymdownx.magiclink:
       repo_url_shorthand: true
       user: wuei-L
-      repo: note.enl-z.cc
+      repo: wuei-L.github.io
   - toc:
       permalink:  👀 # ⚓︎ # 显示锚点
   - pymdownx.tasklist:
@@ -208,6 +214,6 @@ extra:
       link: tencent://AddContact/?fromId=45&fromSubId=1&subcmd=all&uin=1264459560&website=www.oicqzone.com
       name: QQ 
     #- icon: fontawesome/regular/chess-king
-    #  link: https://enl-z.cc/
+    #  link: https://enlzhao.com/
     #  name: Blog
 

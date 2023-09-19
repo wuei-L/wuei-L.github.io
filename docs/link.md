@@ -7,12 +7,12 @@
 
 <div class="flink-list">
     <div class="flink-list-item">
-        <a href="https://enl-z.cc/" title="hengzhao" target="_blank">
+        <a href="https://enlzhao.com/" title="hengzhao" target="_blank">
             <div class="flink-item-icon">
-                <img src="../Images/EZ.png" alt="hengzhao">
+                <img src="../Images/enlz.png" alt="hengzhao">
             </div>
             <div class="flink-item-name">某兰</div>
-            <div class="flink-item-desc">我爹</div>
+            <div class="flink-item-desc">一只小猪</div>
         </a>
     </div>
 </div>
